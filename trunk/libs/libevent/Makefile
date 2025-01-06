@@ -1,5 +1,5 @@
 SRC_NAME=libevent-2.1.8-stable
-SRC_URL=https://github.com/libevent/libevent/releases/download/release-2.1.8-stable/libevent-2.1.8-stable.tar.gz
+SRC_URL=https://github.com/libevent/libevent/releases/download/release-2.1.8-stable/$(SRC_NAME).tar.gz
 
 all: download_test extract_test config_test
 	$(MAKE) -j$(HOST_NCPU) -C $(SRC_NAME)
